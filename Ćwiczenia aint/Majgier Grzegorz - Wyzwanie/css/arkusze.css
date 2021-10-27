@@ -1,0 +1,81 @@
+.block{
+    width: 300px;
+    border: 1px black solid;
+    margin:auto;
+    height:150px;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.circle{
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+
+}
+.oustside{
+    position: relative;
+    overflow: hidden;
+}
+.outside{
+    width: 50%;
+    height:150px;
+    background-size: cover;
+    background-image: url("image/kolo-1.png");
+    display:flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+
+#right{
+    background-image: url("image/kolo-1a.png");
+    transform: rotate(0deg);
+    transition: 2s;
+}
+.inside{
+    width: 50%;
+    height:50%;
+    background-size: 100%;
+
+    background-image: url("image/kolo-1.png");
+    position:relative;
+    background-position:center;
+    transform: rotate(0deg);
+    transition: 2s;
+}
+
+#left{
+    transform: rotate(0deg);
+    transition: 2s;
+}
+#right:hover{
+    transform: rotate(-360deg);
+    transition: 2s;
+}
+#left:hover{
+    transform: rotate(360deg);
+    transition: 2s;
+}
+#left:hover > .inside{
+    transform: rotate(-360deg);
+    transition: 2s;
+}
+#right:hover > .inside{
+    transform: rotate(360deg);
+    transition: 2s;
+}
+#right > .inside:hover{
+    transform: rotate(-360deg);
+    transition: 2s;
+}
+#left > .inside:hover{
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+
+
+
