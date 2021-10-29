@@ -1,0 +1,100 @@
+html{
+    padding:0;
+    margin:0;
+    min-width: 320px;
+}
+
+
+#img{
+    border: black solid 1px;
+    margin:auto;
+    margin-bottom:2%;
+    min-width: 380px;
+    width:50%;
+    padding:15%;
+    background-image: url("02-kod.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+section{
+    margin:auto;
+    max-width: 80%;
+    border: 1px solid black;
+    padding:2%;
+}
+table{
+    overflow-wrap: break-word;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 2%;
+}
+.headertable{
+    background-color: #1b90bb;
+    color:white;
+}
+tr{
+    background-color: #c2eef8;
+}
+th{
+    width:20%;
+    padding: 1%
+}
+#name{
+ color:yellow;   
+}
+#Grey{
+    background: grey;
+    color:white;
+}
+button{
+    background-color: #c2eef8;
+    border:#1b90bb 3px solid;
+    color:#1b90bb;
+    border-radius: 1px;
+    transition:0.6s;
+    
+    
+}
+#tak, #nie{
+    display:none;
+}
+
+@media only screen and (max-width: 700px)
+{
+    #img
+    {
+        
+        min-width: 69.5%;
+        
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+button:hover{
+    color:#c2eef8;
+    background-color: #1b90bb;
+    border:#c2eef8 3px solid;
+    border-radius: 1px;
+    transition:0.6s;
+}
+
+#tak{
+    animation-name: blink1;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes blink1 {
+    0%{
+        opacity:0;
+    }
+    24.9%{
+        opacity:0;
+    }
+    25%{
+        opacity: 1;
+    }
+}
