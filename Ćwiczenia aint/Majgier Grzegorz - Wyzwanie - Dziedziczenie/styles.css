@@ -13,7 +13,7 @@ html{
     width:50%;
     padding:15%;
     background-image: url("02-kod.png");
-    
+
     background-repeat: no-repeat;
     background-position: center;
 
@@ -25,7 +25,7 @@ section{
     padding:2%;
 }
 table{
-    overflow-wrap: break-word;
+    word-break:break-all;
     width: 100%;
     border: 1px solid black;
     margin-bottom: 2%;
@@ -60,15 +60,55 @@ button{
 #tak, #nie{
     display:none;
 }
+@media only screen and (max-width: 888px)
+{
+  body{
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 718px)
+{
+  body{
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 632px)
+{
+  body{
+    font-size: 0.5em;
+  }
+}
+@media only screen and (max-width: 461px)
+{
+  body{
+    font-size: 0.4em;
+  }
+}
+@media only screen and (max-width: 376px)
+{
+  body{
+    font-size: 0.35em;
+  }
+}
+
+
+
 
 @media only screen and (max-width: 700px)
+{
+  #img{
+      min-width: 69.5%;
+  }
+}
+
+@media only screen and (max-width: 640px)
 {
     #img
     {
 
         min-width: 69.5%;
-
         background-size: contain;
+
         background-position: center;
     }
 }

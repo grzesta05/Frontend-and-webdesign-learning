@@ -8,6 +8,7 @@ function functionYN()
     document.getElementById("solution").style.display = "none";
     document.getElementById("nie").style.display = "inline";
     document.getElementById("tak").style.display = "inline";
+    myGuesses();
 }
 
 function myGuesses()
