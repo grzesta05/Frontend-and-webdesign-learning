@@ -1,0 +1,49 @@
+*{
+padding:0;
+margin:0;
+        font-family: 'Indie Flower', cursive;
+
+    font-family: 'Pacifico', cursive;
+font-spacing: 2px;
+letter-spacing: 2px;
+}
+body{background-image: url("https://cdn02.nintendo-europe.com/media/images/08_content_images/games_6/nintendo_switch_7/nswitch_animalcrossingnewhorizons/NSwitch_AnimalCrossingNewHorizons_bg_leaves_green.jpg");
+}
+img{
+height: 10%;
+width:100%;
+
+}
+section{
+display:flex;
+justify-content: spaces-between;
+}
+h1{
+width:100%;
+color:white;
+text-shadow: 1px 1px 3px black;
+text-align: center;
+background-image: url("https://cdn02.nintendo-europe.com/media/images/08_content_images/games_6/nintendo_switch_7/nswitch_animalcrossingnewhorizons/NSwitch_AnimalCrossingNewHorizons_bg_cloud_boat.jpg");
+padding-bottom:3%;
+padding-top:3%;
+}
+figure{
+transform: translate(0,0);
+margin: 1%;
+padding:2%;
+width: 25%;
+height: 100%;
+background-image: url("https://cdn02.nintendo-europe.com/media/images/08_content_images/games_6/nintendo_switch_7/nswitch_animalcrossingnewhorizons/NSwitch_AnimalCrossingNewHorizons_bg_heads.jpg");
+box-shadow: 0 0 3px black;
+filter: saturate(0.3);
+transition: .2s;
+
+}
+figcaption{
+text-align: center;
+}
+figure:hover{
+box-shadow: 0 0 10px black;
+filter: saturate(1);
+transition: .1s;
+}
