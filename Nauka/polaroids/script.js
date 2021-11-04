@@ -1,9 +1,9 @@
 console.log("uuUss");
-const a = document.querySelectorAll("figure");
+var a = document.getElementsByTagName("figure");
 
 for(let i = 0; i < a.length; i++)
 {
-a[i].style.transform = "translate(${Math.random()*10},${Math.random() * 10});"
-console.log(a[i].style.transform);
+a[i].style.transform =  `translate(${Math.random()*50}%,${Math.random() * 50}%) rotate(${((Math.random() * 50) - 25)* Math.random()*2}deg)`;
+console.log(a[i]);
 }
 
