@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang= "pl">
+	<head>
+		<meta charset ="UTF-8">
+		<meta name="viewport" content = "initial-scale=1,width=device-width">
+		<title>Polaroids</title>
+		<style>
+			div{
+				display:flex;
+				justify-content: space-around;
+				margin-top: 5%;
+				
+			}
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #b987ff;
+				overflow: hidden;
+			}
+			figure{
+				
+				
+								background-color:white;
+				padding:1%;
+				width:35%;
+				box-shadow: 3px 2px 10px black;
+				transition:all 1s;
+				filter: saturate(0.5);
+				z-index: 0;
+				
+			}
+			figure:hover{
+				transform: rotate(0deg) scale(1.2) !important;
+								filter: saturate(1);
+								box-shadow: 15px 10px 50px black;
+								z-index: 100;
+	
+				transition:all 0.5s;
+
+			}
+			figcaption{
+				font-size: 1.1em;
+				text-align:center;
+			}
+			img{
+				width:100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		<figure>
+		<img src="obraz01.jpg" alt="uwu" > 
+		<figcaption>Mein Traumurlaub</figcaption>
+		</figure>
+		<figure>
+		<img src="obraz01.jpg" alt="uwu" > 
+		<figcaption>Mein Traumurlaub</figcaption>
+		</figure>
+		</div>
+			<div>
+		<figure>
+		<img src="obraz01.jpg" alt="uwu" > 
+		<figcaption>Mein Traumurlaub</figcaption>
+		</figure>
+		<figure>
+		<img src="obraz01.jpg" alt="uwu" > 
+		<figcaption>Mein Traumurlaub</figcaption>
+		</figure>
+		</div>
+		<script>
+		
+			const a = document.querySelectorAll("figure");
+			
+			for(let i = 0; i < a.length; i++)
+			{
+				a[i].style.transform = `rotate(${(Math.random() * 80)-40}deg)`;
+				
+				
+			}
+			</script>
+	</body>
+</html>
