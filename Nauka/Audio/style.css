@@ -1,0 +1,29 @@
+*{
+	animation: anim 5s  linear;
+
+}
+
+hr{
+	
+}
+
+.fleximg{
+	display:flex;
+
+	
+}
+.fleximg>img{
+	padding:0.5%;
+	width:95%;
+	margin-right: 0.5%;
+		
+
+	border: 1px solid black;
+	  }
+footer{
+}
+@keyframes anim{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(360deg);}
+	100%{transform: rotate(0deg);}
+}
