@@ -3,6 +3,14 @@
     padding:1%;
     color:whitesmoke;
     text-align:center;
+    width:25%;
+}
+#songTitleAndControls{
+    display: flex;
+    justify-content: center;
+}
+#songTitleAndControls>button{
+    color:white;
 }
 footer{
     position:fixed;
