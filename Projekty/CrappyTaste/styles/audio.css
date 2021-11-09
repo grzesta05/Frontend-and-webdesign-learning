@@ -13,7 +13,8 @@ footer{
 audio{
     width:100%;
     color:whitesmoke;
-   
+    border: whitesmoke 2px solid;
+    border-radius: 1000px;
     background-color: #222;
     box-shadow: none;
     

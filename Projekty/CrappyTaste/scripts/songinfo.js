@@ -6,10 +6,11 @@ const songs = [
         path : `music/sanah - kolońska i szlugi.mp3`
     },
     {
-        name : "",
-        author : "",
-        image : "",
+        name : "You broke me first",
+        author : "Conor Maynard (Tate McRae)",
+        image : "https://i.ytimg.com/vi/7ecu7DJwgYA/maxresdefault.jpg",
+        path : "music/Tate McRae - you broke me first.mp3"
     }
 ];
 
-audioplayer.src = songs[0].path;
+

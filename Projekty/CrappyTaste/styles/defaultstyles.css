@@ -16,9 +16,9 @@ nav{
     background-color: #222;
     color:whitesmoke;
     font-size: 1.5rem;
-    padding:1%;
+   
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 ul{
     width:75%;
@@ -40,13 +40,14 @@ a:hover{
 #search{
     margin:auto;
     width:100%;
+    text-align: center;
 }
 input[type=text]
 {
    
     padding:10px;
     margin:1%;
-    width:90%;
+    width:85%;
     background-color: #222;
     border-radius: 100px;
     color:whitesmoke;
@@ -64,6 +65,14 @@ input[type=text]
 /*Random song generator*/
 .randomsong{
     background-color: var(--var);
-    border-radius: 1000px;
+    border-radius: 100px;
     margin:auto;
+    margin-top:2%;
+    color: white;
+    display:flex;
+    justify-content: space-around;
+    text-shadow: black 1px 1px 3px;
+    font-size: 1.3rem;
+    align-items: center;
 }
+
