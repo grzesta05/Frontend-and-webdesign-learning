@@ -11,14 +11,13 @@ body{
     
     width:100%;
     background-color: #333;
-    padding-bottom: 5%;
+    
     
 }
 nav{
     background-color: #222;
     color:whitesmoke;
     font-size: 1.5rem;
-   
     display: flex;
     justify-content: space-around;
 }
@@ -80,7 +79,7 @@ input[type=text]
 }
 /*Song list styles*/
 #SongList{
-    padding-bottom: 5%;
+   
 }
 #SongList,.row{
     margin:auto;
@@ -122,4 +121,19 @@ input[type=text]
     text-align: center;
     color:whitesmoke;
     text-shadow: black 1px 1px 3px;
+}
+#dancingdog{
+    margin:auto;
+    background-image: url("https://i.pinimg.com/originals/b4/b8/6e/b4b86e2f95381b402e71fd3089d370ab.gif");
+    margin-bottom:150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+   text-align: center;
+   padding-top: 300px;
+}
+#dancingdog>p{
+    color:white;
+    bottom:0%;
+    
 }

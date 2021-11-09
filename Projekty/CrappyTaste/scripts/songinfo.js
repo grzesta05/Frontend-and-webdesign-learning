@@ -42,8 +42,8 @@ const songs = [
         path : "music/Beabadoobee - Coffee.mp3",
     },
     {
-        name : "",
-        author : "",
+        name : "bla bla",
+        author : "hgjhgjhghjg",
         image : "",
         path : "",
     },

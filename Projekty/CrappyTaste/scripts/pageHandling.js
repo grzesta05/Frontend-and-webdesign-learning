@@ -45,7 +45,7 @@ function playSong(id)
 }
 function nextOrPrevious(n)
 {
-    playSong(currentlyPlaying+n);
+    playSong(currentlyPlaying+n >= songs.length ? 0 : currentlyPlaying+n);
 }
 
 renderSongs();
