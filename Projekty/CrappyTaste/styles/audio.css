@@ -1,9 +1,13 @@
+#songInfo{
+    font-size: 1.3rem;
+    padding:1%;
+    color:whitesmoke;
+    text-align:center;
+}
 footer{
     position:fixed;
     bottom:0;
     width:100%;
-    display:flex;
-    justify-content: center;
     background-color: #222;
 }
 audio{
