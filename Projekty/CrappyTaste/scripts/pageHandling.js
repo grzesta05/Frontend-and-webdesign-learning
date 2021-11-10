@@ -2,7 +2,7 @@ document.documentElement.style.setProperty('--var', `rgb(${(Math.random()*155)+1
 
 const audioplayer = document.getElementsByTagName("audio")[0];
 const songInfo = document.getElementById("songInfo");
-
+document.getElementById("reset").style.display="none";
 audioplayer.volume = 0.1;
 const randomSongId = Math.floor(Math.random()*songs.length);
 const randomSong = songs[randomSongId];
@@ -22,7 +22,7 @@ var currentlyPlaying = 0;
     for(let i = 0; i < songs.length; i++)
     {
         const img = (songs[i].image == ""? `https://placekitten.com/${Math.round(Math.random()*1000+500)}/${Math.round(Math.random()*400+400)}` : songs[i].image); 
-        a+=`<div class = "col-lg">
+        a+=`<div class = "col-lg" id = "song${i}">
         <button onclick="playSong(${i})" class="songimgbutton" style="background-image: url(${img});"></button>
         <button class = "p" onclick="playSong(${i})">${songs[i].name}<br />${songs[i].author}</button>
         </div>`;
@@ -49,3 +49,39 @@ function nextOrPrevious(n)
 }
 
 renderSongs();
+
+audioplayer.addEventListener('ended', (event) =>{
+    nextOrPrevious(1);
+});
+
+
+function reset()
+{
+    for(let i = 0; i < songs.length; i++)
+    {
+        document.getElementById(`song${i}`).style.display = "initial";
+    }
+    document.getElementById("reset").style.display="none";
+}
+function search()
+{
+    document.getElementById("reset").style.display="initial";
+    let sText = document.getElementById("searchInput").value;
+    let displayedSongs = 0;
+    for(let i = 0; i < songs.length; i++)
+    {
+        document.getElementById(`song${i}`).style.display = "none";
+    }
+    for(let o = sText.length; o > 0  && displayedSongs < 3; o--)
+    {
+    sText = sText.substring(0,o);
+    for(let i = 0; i < songs.length; i++)
+    {
+        if(songs[i].author.search(sText) != -1 || songs[i].name.search(sText) != -1)
+        {
+            document.getElementById(`song${i}`).style.display = "initial";
+            displayedSongs++;
+        }
+    }
+}
+}

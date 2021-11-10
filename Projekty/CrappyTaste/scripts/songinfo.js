@@ -43,7 +43,7 @@ const songs = [
     },
     {
         name : "bla bla",
-        author : "hgjhgjhghjg",
+        author : "hgjdasdasd    hgjhghjg",
         image : "",
         path : "",
     },

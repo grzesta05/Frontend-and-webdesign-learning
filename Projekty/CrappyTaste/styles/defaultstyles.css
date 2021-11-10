@@ -137,3 +137,12 @@ input[type=text]
     bottom:0%;
     
 }
+/*Reset button*/
+#reset{
+    width:100%;
+    font-size: 1.4rem;
+    color:whitesmoke;
+}
+#reset:hover{
+    color:var(--var);
+}
