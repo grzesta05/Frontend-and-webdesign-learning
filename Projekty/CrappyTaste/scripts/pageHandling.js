@@ -67,17 +67,18 @@ function search()
 {
     document.getElementById("reset").style.display="initial";
     let sText = document.getElementById("searchInput").value;
+    sText = sText.toUpperCase();
     let displayedSongs = 0;
     for(let i = 0; i < songs.length; i++)
     {
         document.getElementById(`song${i}`).style.display = "none";
     }
-    for(let o = sText.length; o > 0  && displayedSongs < 3; o--)
+    for(let o = sText.length; o > 0  && displayedSongs < 1; o--)
     {
     sText = sText.substring(0,o);
     for(let i = 0; i < songs.length; i++)
     {
-        if(songs[i].author.search(sText) != -1 || songs[i].name.search(sText) != -1)
+        if(songs[i].author.toUpperCase().search(sText) != -1 || songs[i].name.toUpperCase().search(sText) != -1)
         {
             document.getElementById(`song${i}`).style.display = "initial";
             displayedSongs++;

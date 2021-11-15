@@ -15,8 +15,12 @@ body{
     
 }
 nav{
-    background-color: #222;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    background-color: var(--var);
     color:whitesmoke;
+    text-shadow: 1px 1px 3px black;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-around;
@@ -145,4 +149,8 @@ input[type=text]
 }
 #reset:hover{
     color:var(--var);
+}
+/*Custom controls */
+audio>button{
+    padding:10%;
 }

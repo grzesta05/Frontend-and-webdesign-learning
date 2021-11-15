@@ -21,14 +21,17 @@ footer{
 audio{
     width:100%;
     color:whitesmoke;
-    
-    
-    
     box-shadow: none;
-    
     filter: invert(0.904) grayscale(1);
 }
 -webkit-media-slider-container{
 
    border:none; 
+}
+audio::-webkit-media-controls-toggle-closed-captions-button,
+audio::-webkit-media-controls-return-to-realtime-button,
+audio::-webkit-media-controls-fullscreen-button,
+audio::-webkit-media-controls-return-to-realtime-button
+{
+    display: none;
 }
