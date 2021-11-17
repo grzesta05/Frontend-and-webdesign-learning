@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src = "script.js">
+    
+</script>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    #bottom{
+        margin-top: 1%;
+    }
+    .buttons{
+        display:flex;
+        width:15%;
+        justify-content: space-around;
+    }
+    .buttons>img{
+        width:32%;
+    }
+    section{
+            margin:1%;
+           display: flex;
+           justify-content: space-between;
+    }
+    #page-header{
+        align-self: center;
+        margin-right: 4%;
+    }
+
+</style>
+<body>
+    <hr id ="bottom">
+    <section> 
+        <div class="buttons">
+    <img onclick = "color(this,1)" src = "icons/red-ico.png">
+    <img onclick = "color(this,2)" src = "icons/green-ico.png">
+    <img onclick = "color(this,3)" src = "icons/blue-ico.png">
+</div>
+<p id="page-header" class = "color">Main Page</p>
+</section>
+    <hr>
+    <p class = "color"><span id = "colorbg">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam impedit quae suscipit in eum facere ipsa perspiciatis, odio ex, tempora incidunt iusto assumenda. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum excepturi repellat eos iure quas hic odit quibusdam, tempore dignissimos nobis esse omnis rem incidunt eius! Similique error veniam nesciunt laboriosam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci debitis quasi nobis exercitationem dolores. Necessitatibus in, nam optio eveniet praesentium exercitationem. Reprehenderit sit molestias delectus eius reiciendis dolorum provident facere. Sunt dignissimos cum eligendi in quisquam.</p>
+</body>
+</html>
