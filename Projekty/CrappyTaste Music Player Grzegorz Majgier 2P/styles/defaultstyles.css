@@ -17,7 +17,7 @@ body{
 nav{
     position: fixed;
     top:0;
-    z-index: 100;
+    z-index: 1;
     background-color: var(--var);
     color:whitesmoke;
     text-shadow: 1px 1px 3px black;
@@ -72,19 +72,16 @@ input[type=text]
     background-color: var(--var);
     border-radius: 10px;
     margin:auto;
-    margin-top:2%;
+    margin-top:100px;
     color: white;
     display:flex;
     justify-content: space-around;
     text-shadow: black 1px 1px 3px;
     font-size: 1.8rem;
     align-items: center;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 /*Song list styles*/
-#SongList{
-   
-}
 #SongList,.row{
     margin:auto;
     width:98%;

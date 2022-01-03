@@ -11,6 +11,7 @@
 }
 #songTitleAndControls>button{
     color:white;
+    padding-top: 1%;
 }
 footer{
     position:fixed;
@@ -22,7 +23,7 @@ audio{
     width:100%;
     color:whitesmoke;
     box-shadow: none;
-    filter: invert(0.904) grayscale(1);
+    filter: invert(0.9) grayscale(1);
 }
 -webkit-media-slider-container{
 
