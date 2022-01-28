@@ -1,0 +1,32 @@
+:root {
+    --main-bg-color:rgb(240,201,186);
+    --main-txt-color:green;
+    --main-padding:20px;
+    --main-text-size:20px;
+}
+
+.div1{
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+    padding: var(--main-padding);
+    font-size: var(--main-text-size);
+}
+
+.zadania {
+    margin-left: 20%;
+    margin-right: 20%;
+    min-width: 300px;
+    border: 1px solid black;
+}
+
+p.punktacja,p.test{text-align: center;}
+
+p.punktacja::after{
+    counter-reset: procenty calc(var(--nr_zadania) / var(--ilosc_zadan) * 100);
+    content: counter(procenty) "%";     
+}
+
+p.test::after{
+    counter-reset: pula var(--ilosc_zadan);
+    content: counter(pula) " zadań.";
+}

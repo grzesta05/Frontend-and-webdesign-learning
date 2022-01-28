@@ -1,0 +1,101 @@
+a{
+    color: inherit;
+    text-decoration: none;
+}
+li{
+    color: whitesmoke;
+    text-align: center;
+}
+.container{
+    color: whitesmoke;
+    text-shadow: #a02457 2px 1px;
+}
+
+.item1, img
+{
+    border-radius: 10px;
+}
+#stacked1{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url("https://c.tenor.com/vx6hLcy9tIQAAAAC/hug-encanto.gif");
+}
+#stacked2{
+    background-image: url("https://c.tenor.com/qzFQ44jDnegAAAAC/encanto-camilo.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#stacked3{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    background-image: url("https://c.tenor.com/TDH7Y3gLKu0AAAAC/spinning-isabela-madrigal.gif");
+}
+.t{
+    width: 25%;
+    background: linear-gradient(180deg, #b7bb60 0%, #4aa99a 100%);   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.item1:not(.item1:nth-child(5)):hover{
+    box-shadow: black 1px 1px 10px;
+    transition: 0.3s all;
+}
+.item1:not(.item1:nth-child(5)):hover>p{
+    backdrop-filter: blur(10px);
+    transition: 0.3s all;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.item1:nth-child(1)
+{
+    background: url("https://c.tenor.com/tdo7hDmvLvwAAAAC/encanto-camilo-madrigal.gif");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.item1:nth-child(2)
+{
+    background: url("https://marketresearchtelecast.com/wp-content/uploads/2021/11/The-character-of-Encanto-that-apparently-existed-1280x720.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+ 
+}
+.item1:nth-child(3)
+{
+    background: url("https://www.eltiempo.com/files/article_content_new/uploads/2021/07/08/60e71cb16c091.jpeg"); 
+    
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+   
+}
+.item1:nth-child(6)
+{
+    background: url("https://c.tenor.com/y723OBfJkJAAAAAd/camilo-encanto-camilo-madrigal.gif");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+ 
+}
+.item1>p{
+    transition: 0.2s all;
+    font-size: 2vw;
+    margin:auto;
+    
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    border-radius: 10px;
+}

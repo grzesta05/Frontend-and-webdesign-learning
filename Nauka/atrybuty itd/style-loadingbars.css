@@ -1,0 +1,51 @@
+.pasek-zmienny, .pasek-staly {
+    margin: 10px;
+    overflow: hidden;
+}
+.pasek-zmienny div {
+    height: 10px;
+    animation: pasek calc(var(--czas) * 1s) steps(var(--czas)) forwards;
+    transform-origin: left center;
+}
+.pasek-staly div {
+
+height: 25px;
+}
+.pasek-zmienny[data-style="plynny"] div {
+    animation: pasek calc(var(--czas) * 1s) linear forwards;
+}
+.pasek-zmienny[data-style="skok"] div {
+    animation: pasek calc(var(--czas) * 1s) steps(var(--czas)) forwards;
+}
+.pasek-staly[data-style="wartosc"] div {
+  width: 100%;
+}
+.pasek-zmienny[data-color="blue"] div {
+   background: linear-gradient(to bottom, #64b5f6, #1565c0); 
+}
+.pasek-zmienny[data-color="green"] div {
+    background: linear-gradient(to bottom, #5cffa0, #0ab419); 
+}
+.pasek-staly[data-color="green"] div {
+    background: linear-gradient(90deg,rgba(0,251,118,1) 0%,rgba(0,255,118,1) calc(var(--pozycja)*10%),rgba(244,244,244,1) calc(var(--pozycja)*10%),rgba(244,244,244,1) 100% );
+}
+.pasek-zmienny[data-color="red"] div {
+    background: linear-gradient(to bottom, red, #922020); 
+}
+.legenda {
+    position: absolute;
+    width: 800px;
+    border: 1px solid black;
+}
+.legenda::before{
+    text-align: center;
+    display: block;
+    color: rgba(144, 144,144,1);
+    content: "PUNKTACJA";
+}
+
+@keyframes pasek {
+    to {
+        transform: scaleX(0);
+    }
+}

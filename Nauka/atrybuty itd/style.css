@@ -1,0 +1,37 @@
+:root{
+    --basic-font-color: rgb(200, 50, 200);
+}
+
+.ejemplo1 a::after
+{
+    content: attr(href) " ";
+    color: var(--basic-font-color);
+}
+.a1{
+    color: var(--basic-font-color);
+}
+.a2{
+    color: var(--basic-font-color);
+}
+.a3{
+    color: var(--basic-font-color);
+}
+
+.spis{
+counter-reset: zadania;
+}
+.spis:nth-child(2)>*:not(h1)::before{
+    counter-increment: zadania;
+    content: "Zadanie " counter(zadania) ": ";
+}
+.przyklad2>h2{
+    counter-reset: zadania1;
+}
+.przyklad2>h2::before{
+    counter-increment: zadania;
+    content: "💠 ";
+}
+.przyklad2>h3::before{
+    counter-increment: zadania1;
+    content: "⭕ Czynność " counter(zadania) "." counter(zadania1) " ";
+}
