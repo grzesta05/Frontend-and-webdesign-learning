@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang='pl-PL'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='style/main.css'>
+    <link rel='stylesheet' href='style/examples.css'>
+    <script src='js/lista.js' defer></script>
+    <title>CSS - selektory</title>
+</head>
+<body class="main-body" >
+    <div class="main-outer-frame">
+
+        <div class="intro-menu">
+            <p class="p-box">Przykładowe zastosowanie niektórych selektorów CSS</p>
+        </div>
+<!--Menu przykład ex-1-->
+        <div id="ex01" class="example-menu center">
+            <div class="nr-example-menu"></div>
+            <div class="topic-example-menu">
+                <p class="center p-box"> = Pseudo-Class Selectors = | :any-link | :link | :visited | <strong>:target</strong> |</p>
+            </div>
+        </div>
+            <div class="note-example-menu bold center">
+                <p>Pseudoklasa: :target { ... }</p>
+            </div>
+<!-- Przykład 1-->        
+            <div class="ex-1 sub-example-menu">
+                <h3 id="spis" class="center">[Spis zawartości - Rodzaje matryc w TV]</h3>
+                <hr>
+                    <ul>
+                        <li class="ex1"><a href="#led">Matryca LED</a></li>
+                        <li class="ex1"><a href="#qled">Matryca QLED</a></li>
+                        <li class="ex1"><a href="#plazma">Matryca plazmowa</a></li>
+                    </ul>
+                   <hr>
+    
+                <h3 id="led">Matryca LED <a href="#spis">[SPIS]</a></h3>
+                <p class="text-justify">Matryca LED (Light Emitting Diode), jak sama nazwa wskazuje, 
+                    jest zbudowana z diod elektroluminescencyjnych – w celu uzyskania 
+                    szerokiej palety kolorów wykorzystywane są trzy kolory: czerwony, 
+                    zielony i niebieski, które tworzą piksel. W zależności od stopnia podświetlenia pozwalają na 
+                    stworzenie efektu milionów różnych odcieni danego koloru</p>
+                
+                <h3 id="qled">Matryca QLED <a href="#spis">[SPIS]</a></h3>
+                <p class="text-justify">Telewizory QLED stanowią dobrą alternatywę dla modeli wyposażonych w matrycę QLED. 
+                    W panelu LCD stosowane są kropki kwantowe, które pochłaniają, a następnie emitują 
+                    światło w innym kolorze. Producent za przykład podaje kropki o wielkości 2 nm, które
+                     emitują światło niebieskie.  Kropki 6-7 nm są w stanie wyświetlać światło czerwone.</p>
+                
+                <h3 id="plazma">Matryca plazmowa <a href="#spis">[SPIS]</a></h3>
+                <p class="text-justify">Ksenon i neon, gaz stosowany w wyświetlaczach plazmowych, zawarty jest w setkach 
+                    tysiącach drobnych komórek umieszczonych pomiędzy dwiema szklanymi płytami, 
+                    między którymi umieszczono także elektrody adresujące, rozciągające się na cały ekran.
+                     Jeden zestaw elektrod umieszczono w liniach poziomych, a drugi w liniach pionowych
+                      tworząc swego rodzaju siatkę.</p>
+                <hr>
+
+
+            </div>
+<!-- main-outer-frame - koniec -->
+    </div>
+
+</body>
+</html>
