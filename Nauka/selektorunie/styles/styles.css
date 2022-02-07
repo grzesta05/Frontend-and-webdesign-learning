@@ -1,10 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Source+Sans+Pro&display=swap');
-body{
-    font-family: 'Comforter', cursive;
-
+.ex-1 {
+    margin: 20px;
 }
-body.main-body{
-    background-color: burlywood;
+.ex-1 h3 {
+    color: chocolate;
+}
+li.ex1 {
+    margin-left: 40px;
+    font-weight: bold;
+    color: chocolate;
+    list-style-type: square;
+}
+.ex-1 h3, .ex-1 p {
+    font-size: 22px;
+    margin: 5px 20px;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
-p{font-size:  clamp(1rem, 5vw, 2rem);}
+.ex-1 h3 a {
+    font-size: 12px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.ex-1 a {
+    text-decoration: none;
+}
+.ex-1 a:hover {
+    color: white;
+    background: grey;
+}
+.ex-1 a:active {
+    color: darkred;
+}
+.ex-1 a:link {
+    color: black;
+}
+.ex-1 a:visited {
+    color: black;
+}
+.ex-1 h3:target {
+    background: grey;
+    color: white;
+}
+.ex-1 h3:target a {
+    color: yellow;
+}
+.ex-2 button {
+    font-size: 24px;
+    border: 5px solid black;
+    padding: 10px 20px;
+}
+.ex-2 button:hover, .ex-2 button:focus {
+    border-color: blue;
+}
+.ex-2 button:active {
+    background: black;
+    color: white;
+}
+.ex-3 form:focus-within, .ex-3 fieldset:focus-within {
+    border: 2px dotted red;
+}
+.ex-3 fieldset:focus-within {
+    background: yellow;
+}
+.ex-3 input:focus {
+    border: 3px solid blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: 'JetBrains Mono', monospace;
+}
+body {
+    background: #f9f9f7;
+}
+body.main-body {
+    background: url('/pliki/tlo.jpg');
+    background-repeat: repeat-x;
+    counter-reset: ex;
+}
+p {
+    font-size: 20px;
+}
+.p-box {
+    padding: 5px;
+}
+.m-box {
+    margin: 10px;
+}
+div.main-outer-frame {
+    top: 15px;
+    position: relative;
+    width: 80%;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid grey;
+    box-shadow: inset 0 0 16px, darkgrey, 0 0 30px darkgrey;
+}
+div.intro-menu {
+    min-width: 960px;
+    max-width: 1160px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: ivory;
+    background: darkorange;
+    margin-bottom: 5px;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.flex {
+    display: flex;
+}
+div.example-menu {
+    display: flex;
+    margin: 0 auto;
+    min-width: 960px;
+    max-width: 1160px;
+    border: 2px solid darkorange;
+    background: rgba(235, 149, 11, 0.4);
+    color: darkgreen;
+}
+div.nr-example-menu {
+    padding: 15px;
+    width: 15%;
+    border-right: 2px solid darkorange;
+}
+div.nr-example-menu::before {
+    counter-increment: ex;
+    font-size: 30px;
+    content: "EX-" counter(ex);
+}
+div.topic-example-menu {
+    width: 85%;
+}
+div.note-example-menu {
+    margin: 0 auto;
+    min-width: 960px;
+    max-width: 1160px;
+    border-left: 2px solid darkorange;
+    border-right: 2px solid darkorange;
+    border-bottom: 2px solid darkorange;
+    font-size: 25px;
+    background: rgba(235, 149, 11, 0.2);
+    padding: 10px;
+    color: darkgreen;
+}
+div.note-example-menu > p {
+    font-size: 18px;
+}
+div.sub-example-menu {
+    margin: 0 auto;
+    min-width: 960px;
+    max-width: 1160px;
+    border-left: 2px solid darkorange;
+    border-right: 2px solid darkorange;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    color: darkgreen;
+}
+.text-justify {
+    text-align: justify;
+}
+.bold {
+    font-weight: bolder;
+}
+.boldline::first-line {
+    font-weight: bolder;
+}
+.inner-frame {
+    display: flex;
+    margin: 0 auto;
+    background: rgba(85, 85, 85, 0.2);
+    border: 2px solid grey;
+}
+.inner-frame-left {
+    width: 40%;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.6);
+}
+.inner-frame-right {
+    width: 60%;
+    border-left: 2ox solid grey;
+    background: rgba(255, 255, 255, 0.2);
+}
+.ex-4 .inner-frame-left::first-line, .ex-4 .inner-frame-right::first-line {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+}
+.brake-down {
+    margin-bottom: 10px;
+}
+.brake-up {
+    margin-top: 10px;
+}
+.brake {
+    margin: 10px 0;
+}
+tbody > tr:nth-child(2n){
+    background-color: red;
+    color:white;
+}

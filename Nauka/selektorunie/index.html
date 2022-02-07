@@ -4,8 +4,8 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet"> 
-    <link rel='stylesheet' href='style/main.css'>
-    <link rel='stylesheet' href='style/examples.css'>
+    <link rel='stylesheet' href='styles/styles.css'>
+    
     <script src='js/lista.js' defer></script>
     <title>CSS - selektory</title>
 </head>
@@ -61,6 +61,132 @@
             </div>
 <!-- main-outer-frame - koniec -->
     </div>
+<!-- Menu przykład ex-2 -->
+<div id="ex02" class="example-menu center">
+    <div class="nr-example-menu"></div>
+    <div class="topic-example-menu ">
+        <p class="center p-box"> = User Action Pseudo-Class Selectors = | <b>:hover</b> | <b>:focus</b> | 
+            <b> :active </b>| :focus-within | </p>
+    </div>
+</div>
+    <div class="note-example-menu bold center">
+        <p>Pseudoklasa: :hover{ ... }, :focus{ ... }, :active{ ... }</p>
+    </div>        
+<!-- Przykład 2-->
+<div class="ex-2 sub-example-menu center flex">
+    <p>Kliknij przycisk  potem nacisnij tab by zobaczyć stan<code>:focus</code>. 
+        Następnie  kliknij i przytrzymaj PPM by zobaczyć stan <code>:active</code>.</p>
+    <button class="m-box">Kliknij na mnie !!</button>
+</div>
+<!-- Menu przykład ex-3 -->
+<div id="ex03" class="example-menu center">
+    <div class="nr-example-menu"></div>
+    <div class="topic-example-menu ">
+        <p class="center p-box">Pseudoklasa <b>:focus-within { ... }</b></p>
+    </div>
+</div>
+<div class="note-example-menu bold center">
+    <p>:focus-within aktywuje się, kiedy element, na którym działa jest w stanie
+        :focus lub jakikolwiek jego potomek jest w stanie :focus.</p>
+</div>        
+<!-- Przykład 3-->
+<div class="ex-3 sub-example-menu center">
+    <form>
+        <fieldset>
+          <legend class="p-box">Twój unikatowy numer:</legend>
+          <label  class="m-box" for="old_one">Podaj swój PESEL:</label>
+          <input class="m-box" id="old_one" type="text">
+        </fieldset>
+      </form>
 
+</div>
+<div class="ex-4 sub-example-menu">
+    <div class="inner-frame">
+        <div class="inner-frame-left p-box">
+            <p class="brake-down">Wartość parametru n może być:</p> 
+            <p> - wyrażeniem (odd lub even) - parzyste lub nieparzyste;</p> 
+            <p> - numerem (1, 2, ...);</p> 
+            <p> - prostą formułą (2n, 2n+1, -n).</p> 
+            <p class="bold brake">:nth-last-child(n)</p>
+            <p>Pseudoklasa działa podobnie jak :nth-child(n)</p>
+            <p>z tym że elementy liczone są od ostatniego wystąpienia.</p>
+        </div>
+        <div class="ex-4 inner-frame-right p-box">
+            <p c>tr:nth-child( wartość ) zaznaczy ? rząd w tabeli ?</p>
+            <p class="bold brake">tr:nth-child(0n+1) n startuje od 0 z przyrostem o 1. </p> 
+            <p>jeżeli n=0, to 0 * 0 + 1 = 1. pierwszy rząd;</p>
+            <p>jeżeli n=1, to 0 * 1 + 1 = 1. pierwszy rząd;</p>
+            <p>jeżeli n=2, to 0 * 2 + 1 = 1. pierwszy rząd;</p>
+            <p class="bold brake">tr:nth-child(2n+1) </p> 
+            <p>jeżeli n=0, to 2 * 0 + 1 = 1. pierwszy rząd;</p>
+            <p>jeżeli n=1, to 2 * 1 + 1 = 3. trzeci rząd;</p>
+            <p>jeżeli n=2, to 2 * 2 + 1 = 5. piąty rząd;</p>
+            <p class="bold brake">tr:nth-child(2n) </p> 
+            <p>jeżeli n=0, to 2 * 0 = 0. brak rzędu;</p>
+            <p>jeżeli n=1, to 2 * 1 = 2. drugi rząd;</p>
+            <p>jeżeli n=2, to 2 * 2 = 4. czwarty rząd;</p>
+            <p class="bold brake">tr:nth-child(-n+3) 3 pierwsze rzędy</p> 
+            <p>jeżeli n=0, to 0 + 3 = 3. trzeci rząd;</p>
+            <p>jeżeli n=1, to 0 + 2 = 2. drugi rząd;</p>
+            <p>jeżeli n=2, to 0 + 1 = 1. pierwszy rząd;</p>
+                <div class="ex-4-table">
+                    <table>
+                        <thead>
+                           <tr> <th> Przedmiot: <th>Ilość: <th> Cena:
+                        <tbody>
+                           <tr> <th> Śruba M4   <td> 15 <td>  1 zł
+                           <tr> <th> Śruba M6   <td> 15 <td>  2 zł
+                           <tr> <th> Śruba M8   <td> 18 <td>  5 zł
+                           <tr> <th> Nakrętka   <td> 35 <td>  2 zł
+                           <tr> <th> Szpila     <td>  2 <td> 12 zł
+                           <tr> <th> Igła       <td>  1 <td> 42 zł
+                           <tr> <th> Dysza      <td>  3 <td> 75 zł
+                     </table>
+                </div>
+        </div>
+    </div>
+
+
+</div>
+    <div class="ex-4a sub-example-menu">
+        <div class="inner-frame">
+            <div class="inner-frame-left p-box">
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+                <aside>Lorem ipsum :)</aside>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+                <aside>Lorem ipsum :)</aside>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+
+            </div>
+            <div id="sampleList" class="ex-4b inner-frame-right p-box center">
+
+            </div>
+        </div>
+    </div>
+<!-- Menu przykład ex-4 -->
+<div id="ex04" class="example-menu center">
+    <div class="nr-example-menu"></div>
+    <div class="topic-example-menu ">
+        <p class="center p-box"> = Tree-Structural <b> - -Child-Indexed- -</b> Pseudo-Class Selectors =</p> 
+        <p class="center p-box">:first-child |
+            :last-child |
+            :only-child |
+            :nth-child(n) |
+            :nth-last-child(n)</p>
+    </div>
+</div>
+    <div class="note-example-menu bold center boldline ex-4">
+        <p>Pseudoklasa: :first-child { ... }</p>
+        <p class="m-box">Pseudoklasa :first-child sprawia iż własności stosowane są do elementu 
+            tylko wtedy gdy jest on pierwszym węzłem potomnym swojego rodzica. Kolejne dwie pseudoklasy działają analogicznie.</p>
+        <p class="boldline">Pseudoklasa: :nth-child(n) { ... }</p>
+        <p class="m-box">Dopasowuje elementy na podstawie ich pozycji w grupie rodzeństwa.</p>
+    </div>        
 </body>
 </html>
