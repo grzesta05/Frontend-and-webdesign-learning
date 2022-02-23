@@ -1,0 +1,47 @@
+:root{
+    --main: palevioletred;
+}
+
+.main-container{
+    border: 3px solid var(--main);
+    margin: 10px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 20px var(--main);
+}
+.section-container-note{
+    border-bottom: 5px dotted var(--main);
+    padding:5px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.section-container{
+    display: flex;
+    padding:5px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.section{
+    width:32%;
+    margin:5px;
+}
+.article-container{
+    margin:10px 14px;
+    padding:5px;
+  
+}
+.article-note > p{
+    text-align: center;
+    font-size: 2em;
+    padding:5px;
+    border-bottom: dotted 2px var(--main); 
+}
+.article-container p:first-of-type{
+    text-align: left;
+   padding: 10px;
+   font-weight: bold;
+}
+.article-text p:last-of-type::first-letter{
+    font-size: 2em;
+}
+
