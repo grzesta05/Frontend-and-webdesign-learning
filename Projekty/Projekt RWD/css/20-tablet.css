@@ -1,0 +1,88 @@
+@import "01-varibles.css";
+
+:root {
+    --main-font-size:16px
+}
+section >h2 {
+    font-size: 1.5em;
+}
+section{
+    padding-top: 10vh;
+}
+
+div.landing--content > h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+.landing--container{
+    flex-direction: row;
+    margin: auto;
+    width: 960px;
+    height: 35vh;
+    padding: 5px;
+    background-color: var(--box-color);
+    min-height: 335px;
+}
+.landing--content {
+margin-top: 5px;
+    padding: 5px;
+    width: 33%;
+    margin:5px;
+    font-size: 2em;
+}
+
+.landing--content--event {
+    padding: 5px;
+    margin: 3px;
+    height: 80px;
+    background-color: var(--content-color);
+    font-size: 0.6em;
+}
+aside{
+    position: static;
+}
+.nav--container>div{
+    order: 2;
+    flex-basis: 35% ;
+}
+.nav--container{
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-flow: row wrap;
+
+}
+.nav--social{
+    order:-1 !important;
+}
+
+.back--menu {
+    width: 100px;
+    height: 50px;
+    
+    background-color: var(--content-color);
+}
+aside div{
+    display: block !important;
+}
+aside > a{
+    transition: 0.5s;
+    border: 2px solid var(--global-border-color);
+}
+
+/*
+Styles copy from mobile*/
+
+.nav--links{
+    min-width: 600px;
+    flex-direction: row;
+}
+.nav--social{
+    min-width: 150px;
+}
+
+/*
+Menu hamburger hiding*/
+.menu--icon{
+    display: none;
+}
