@@ -1,0 +1,15 @@
+:root {
+    --bg-color: #072227;
+    --box-color: #35858B;
+    --content-color: #4FBDBA;
+    --global-text-color: seashell;
+    --global-border-color: lightgrey;
+    
+    --link-color:seashell;
+    --link-hover-color:rgb(122, 255, 204);
+    
+    --main-font-size:10px;
+
+    --info-color1: #325288;
+    --info-color2: #35858B; 
+}

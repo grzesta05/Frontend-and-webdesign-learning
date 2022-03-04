@@ -1,0 +1,204 @@
+@import "00-reset.css";
+@import "02-global.css";
+@import "01-varibles.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--main-font-size);
+    overflow-x:hidden;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--global-text-color);
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    z-index: 2;
+}
+
+.nav--container, .footer--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 10px;
+    font-size: 1.5em;
+
+}
+.nav--container{
+    flex-direction: column;
+    padding: 10px;
+    gap: 1vh;
+    width:100%;
+    height: 100%;
+}
+.nav--logo{
+    aspect-ratio: 1;
+    border-radius: 10px;
+    width: 5%;
+    padding: 15px;
+    background-color: var(--content-color);
+
+}
+.nav--links{
+    border-radius: 10px;
+    order: 10;
+    width: 100vw;
+    height: 100vh;
+    justify-content: flex-start !important;
+    padding: 15px;
+    flex-direction: column;
+    background-color: var(--content-color);
+}
+.nav--links> *{
+margin: 5%;
+}
+.nav--social{
+    border-radius: 10px;
+    width: 75%;
+    padding: 15px;
+    background-color: var(--content-color);
+
+}
+
+aside {
+    position: fixed;
+    font-size: 1rem;
+    font-weight: normal;
+    bottom:15px;
+}
+/*TO DO */
+aside > a{
+    border-bottom: var(--link-color) solid 60px;
+    transition: 0.5s;
+    border-left: transparent solid 30px;
+    width: 40px;
+    border-right: transparent solid 30px;
+}
+aside div{
+    display: none !important;
+}
+
+
+
+#aside-show{
+    opacity: 1;
+    transition: opacity 1s;
+}
+#aside-show.fade{
+    opacity: 0;
+}
+
+
+section{
+    padding-top: 28vh;
+}
+
+section > h2 {
+    
+    padding-top: 10%;
+    padding-bottom: 5px;
+    text-align:center ;
+    font-size: 2em;
+}
+
+section > h2.global--event--first-year {
+    padding-top:10%;
+    padding-bottom: 10px; 
+}
+
+div.landing--content > h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.landing--container{
+    border-radius: 10px;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    height: fit-content;
+    background-color: var(--box-color);
+}
+.landing--content {
+    border-radius: 10px;
+    padding: 5px;
+    width: 90%;
+    margin:5px;
+    font-size: 2em;
+}
+
+.landing--content--event {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    height: fit-content;
+    background-color: var(--content-color);
+    font-size: 0.6em;
+}
+
+
+.footer--phone{
+ 
+    padding: 10px;
+    margin-left: 80px;
+    min-width: 200px;
+    background-color: var(--content-color);
+}
+.footer--other{
+    
+    padding: 10px;
+    margin-right: 80px;
+    min-width: 200px;
+    background-color: var(--content-color);
+}
+
+footer {
+    margin-top: 25px;
+}
+
+/*Menu Hamburger*/
+.menu--icon{
+    order:5;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    text-align: center;
+}
+.arrow--bottom{
+    border-top: 20px solid var(--link-color);
+    border-right: transparent 10px solid;
+    border-left: transparent 10px solid;
+    width:20px;
+}
+
+.arrow--bottom--clicked{
+    border-bottom: 20px solid var(--link-color);
+    border-right: transparent 10px solid;
+    border-left: transparent 10px solid; 
+}
+
+/*Info boxes*/
+
+.about--info1, .about--info2{
+    border-radius: 10px;
+    padding: 5%;
+    margin: 5%;
+    border: 2px solid var(--global-border-color);
+}
+ .about--info1 {
+     background-color: var(--info-color1);
+ }
+ .about--info2{
+     background-color: var(--info-color2);
+ }

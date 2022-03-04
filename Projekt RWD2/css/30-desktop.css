@@ -1,0 +1,46 @@
+:root {
+    --main-font-size:20px
+}
+section >h2 {
+    font-size: 2em;
+}
+
+div.landing--content > h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.landing--container{
+    margin: auto;
+    
+    
+    padding: 10px;
+    background-color: var(--box-color);
+    min-height: 465px;
+}
+.landing--content {
+    margin-top: 10px;
+    padding: 10px;
+   
+    margin:5px;
+    font-size: 2em;
+}
+
+.landing--content--event {
+    padding: 10px;
+    margin: 5px;
+
+    background-color: var(--content-color);
+    font-size: 0.6em;
+}
+/*Aside has to work*/
+aside {
+    position: fixed;
+    font-size: 1rem;
+    font-weight: normal;
+    right: calc(calc(calc(100vw - 960px) / 4) - 55px);
+    bottom:125px;
+}
+.nav--container{
+    flex-direction: row;
+}
