@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let click = 0;
+        const tab = [0,1];
+        const tabcol = ["white", "black"]
+        function swap()
+        {
+            click ++;
+            document.documentElement.style.setProperty("--bg-color", tabcol[click%2]);
+            document.body.style.setProperty("filter", `invert(${tab[click%2]})`);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Grz Grz Gur Gur</h1>
+        <p id="color-swap" onclick="swap()">Color Swap</p>
+    </header>
+    <section class="main--section">
+    <div class="cocky--clock--container">
+        <div class="cocky--clock">
+            <div class="clock--num num1">12</div>
+            <div class="clock--num num2">3</div>
+            <div class="clock--num num3">6</div>
+            <div class="clock--num num4">9</div>
+            <div class="thick--boi"></div>
+            <div class="slim--boi"></div>
+            <div class="skinny--boi"></div>
+            <div class="kropeczka-zeby-bruhtek-sie-nie-przyczepil"></div>
+        </div>
+    </div>
+    <div class="butty--battery--container">
+        <div class="butty--battery">
+            <div class="main--ogniwo">
+                <div class="progress"></div>
+            </div>
+            <div class="przybudówa--ogniwa"></div>
+        </div>
+    </div>
+    </section>
+    <div class="underline--overline">Underline</div>
+</body>
+</html>
