@@ -1,0 +1,80 @@
+@import url("02-sticky-menu-styles.css");
+@import url("01-reset.css");
+@import url("03-side-menu-styles.css");
+
+html {
+    font-family: 'Fira Code', monospace;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    overflow-x: hidden;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: #4c566a;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .body-container {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background-color: #2E3440;
+    color: #D8DEE9;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 4em;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    height: auto;
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+  article {
+    border-radius: 10px;
+   
+    width: 800px;
+    height: 400px;
+    background-color: #2E3440;
+    margin: auto;
+    color: #D8DEE9;
+  }
+  .main-article-container {
+    padding: 10px;
+  }
+  .main-article-content-container {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  article p {
+    display: inline-block;
+    width: 50%;
+  }
+  article img {
+    display: inline-block;
+    width: 45%;
+  }
+  #kapibara2 {
+    background-color: #BF616A;
+  }
+  #kapibara3 {
+    background-color: #D08770;
+  }
+  #kapibara4 {
+    background-color: #A3BE8C;
+  }
+  #kapibara5 {
+    background-color: #B48EAD;
+  }
