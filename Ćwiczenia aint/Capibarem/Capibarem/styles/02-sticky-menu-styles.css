@@ -3,6 +3,7 @@ a{
     color: #D8DEE9;
     height: 100%;
     width: 100%;
+    padding:2vh;
 }
 .sticky--menu--main{
     position:sticky;
@@ -20,7 +21,7 @@ a{
     width:20%;
     color: #D8DEE9;
     font-size: 1.8rem;
-    padding: 2vh;
+    
     height: 80px;
     border-radius: 100px;
     z-index: 1;

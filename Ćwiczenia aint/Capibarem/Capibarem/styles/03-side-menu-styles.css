@@ -5,17 +5,28 @@
     left:0%;
     width:25%;
     background-color: #2E3440;
+    border-radius: 0 10px 10px 0;
+    
+
 }
-.side--menu h2{
+.side--menu--headers>li>a, .side--menu h2{
     font-size: 2.5rem;
     cursor: pointer;
     color: whitesmoke;
 }
 .side--menu--headers{
+    margin-top: 5%;
     list-style-type: none;
+    padding-bottom: 10%;
+    padding-left: 5%;
+}
+.side--menu--headers>*{
     transition: 1s all;
 }
 
+.side--menu--headers>*:first-child{
+    transform: translateX(3.5rem);
+}
 .moved{
     transform: translateX(3.5rem);
     transition: 1s all;
@@ -23,19 +34,22 @@
 
 .side--menu--inner{
     list-style-type:square;
-    position: relative;
+    position: absolute;
     color: white;
-    display: none;
     transform-origin: top;
+    transform: scaleY(0);
+    transition: 1s all;
+    padding: 10%;
+    border-radius: 10px;
+    background-color: rgb(255, 60, 93);
     
 }
 
-@keyframes amim {
-    from {transform: scaleY(0);}
-    to {transform: scaleY(1);}
-    
-}
+
 .side--menu--icon{
+    top:0;
+    margin-top: 5%;
+    left:4%;
     transition: 1s all;
     position: absolute;
     width: 3.5rem;
@@ -44,6 +58,7 @@
     padding: 1%;
     border-radius: 1000px;
     z-index: 10;
+    
 }
 .side--menu--icon>img{
     width: 100%;
