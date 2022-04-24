@@ -1,0 +1,74 @@
+body{
+    z-index: 1;
+}
+.stackslider--container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    height: fit-content;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+.stackslider--element--wrapper{
+    width:50vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+}
+.stackslider--element{
+    z-index: 0;
+    position: absolute;
+    margin:auto;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(202, 202, 202) 0px 0px 10px;    
+    text-align: center;
+}
+.stackslider--element:first-of-type{
+    z-index: 1;
+}
+.stackslider--element--image{
+    border:none;
+    width: 100%;
+    height: 100%;
+}
+.stackslider--element--caption{
+    position: absolute;
+}
+
+.stackslider--arrow>img{
+    width:5vw;
+}
+.stackslider--arrow:last-of-type
+{
+    transform: rotate(180deg);
+}
+
+.stacked{
+    animation: stack 0.5s;
+    transform: initial;
+}
+@keyframes stack {
+    0%{
+        transform: scale(2) rotate(0deg);
+    }
+    100%{
+        
+    }
+}
+
+.stackslider--element:nth-child(3n)
+{
+    transform: rotate(10deg);
+}
+.stackslider--element:nth-child(2n)
+{
+    transform: rotate(-5deg);
+}

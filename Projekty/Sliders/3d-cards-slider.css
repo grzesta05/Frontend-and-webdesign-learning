@@ -1,0 +1,51 @@
+.card--slider{
+    margin-top: 10%;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.left{
+    transform: rotateY(-50deg) rotateZ(15deg);
+    left:10%;
+    opacity: 1 !important;
+}
+
+.right{
+    right: 10%;
+    transform: rotateY(-50deg) rotateZ(-15deg);
+    opacity: 1 !important;
+}
+.card{
+    
+    margin: auto;
+    width: 25vw;
+    padding: 0.5%;
+    position: absolute;
+    box-shadow: 0px 0px 10px rgb(122, 122, 122);
+    background-color: white;
+    z-index: -1;
+}
+
+.card>img{
+    width: 100%;
+}
+
+.dots>button{
+    border:none;
+    border-radius: 100%;
+    padding: 1vw;
+    background-color: #bdbdbd;
+    transition: all 1s;
+   
+}
+
+.dots{
+    margin: auto;
+    width:15%;
+    display: flex;
+    justify-content: space-around;
+    transition: all 1s;
+    align-self: flex-end;
+}

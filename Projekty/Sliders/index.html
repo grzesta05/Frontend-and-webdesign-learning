@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="stack-slider.css">
+    <link rel="stylesheet" href="3d-cards-slider.css">
+    <link rel="stylesheet" href="main-style.css">
+    <script defer>
+        let indicator = 0;
+        let howDeepDown = 0;
+        function flipStack(a){
+            
+            if(a != -1){
+                indicator+=a; 
+                
+            console.log(indicator);
+            const o = document.querySelectorAll(".stackslider--element");
+            o[Math.abs(indicator) % o.length].classList.toggle("stacked");
+            o[Math.abs(indicator)  % o.length].style.zIndex = indicator;
+            setTimeout(()=>{
+                o[Math.abs(indicator) % o.length].classList.toggle("stacked");
+            },"500")
+        }
+        if(a==-1)
+            {
+                howDeepDown++;
+                const o = document.querySelectorAll(".stackslider--element");
+                o[indicator % 4].style.zIndex = -howDeepDown;
+                indicator+=a;
+                if(indicator < 0)
+                {
+                    indicator = o.length-1;
+                    
+                }
+            }  
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="signature--container">
+        <h1>Grzegorz Majgier</h1>
+    </div>
+    <!--Stack slider-->
+    <div class="stackslider--container">
+        <div class="stackslider--arrow" onclick="flipStack(-1)"><img src="icons8-double-left-50.png" alt=""></div>
+        <div class="stackslider--element--wrapper">
+        <figure class="stackslider--element">
+            <figcaption class="stackslider--element--caption">
+                1
+            </figcaption>
+        </figure>
+        <figure class="stackslider--element">
+            <figcaption class="stackslider--element--caption">
+2
+            </figcaption>
+        </figure>
+        <figure class="stackslider--element">
+            <figcaption class="stackslider--element--caption">
+3
+            </figcaption>
+        </figure>
+        <figure class="stackslider--element">
+            <figcaption class="stackslider--element--caption">
+4
+            </figcaption>
+        </figure>
+    </div>
+    <div class="stackslider--arrow" onclick="flipStack(1)"><img src="icons8-double-left-50.png" alt=""></div>
+    </div>
+    
+    <!--Cards 3D slider-->
+    <div class="card--slider">
+        <div class="card">
+            <img src="img1.jpg" alt="" class="card--image">
+            <p class="card--description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea illo velit id quisquam eligendi ipsa, corporis voluptatum corrupti cum illum aliquid, aut eaque consequuntur repudiandae. Molestiae assumenda inventore amet.
+            </p>
+        </div>
+        <div class="card right">
+            <img src="img1.jpg" alt="" class="card--image">
+            <p class="card--description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum distinctio veniam voluptatibus repellat tempore nemo provident ipsa ducimus similique, quos facilis, a deserunt. Quasi, doloremque perferendis? Dolore, repellat? Modi, aspernatur!
+            </p>
+        </div>
+        <div class="card">
+            <img src="img1.jpg" alt="" class="card--image">
+            <p class="card--description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci debitis reprehenderit sit natus vitae est cumque, molestias quibusdam animi cupiditate voluptatum, recusandae accusantium nam voluptatem exercitationem laudantium aspernatur dolore! Voluptatibus?
+            </p>
+        </div>
+        <div class="card left">
+            <img src="img1.jpg" alt="" class="card--image">
+            <p class="card--description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos, adipisci inventore ipsam dolorum sint, ipsa odit, quod minima architecto reprehenderit impedit amet unde. Recusandae quo ea at mollitia corrupti?
+            </p>
+        </div>
+       
+    </div>
+    <div class="dots">
+        <button onclick = "swapCard(0)"></button>
+        <button onclick = "swapCard(1)"></button>
+        <button onclick = "swapCard(2)"></button>
+        <button onclick = "swapCard(3)"></button>
+    </div>
+    <script>
+        const buttons = document.querySelectorAll(".dots>button");
+        const cards = document.querySelectorAll(".card");
+        swapCard(0);
+        function swapCard(n)
+        {
+            for(let i = 0; i < 4; i++)
+            {
+                buttons[i].style.backgroundColor = "#bdbdbd";
+                cards[i].classList.remove("right");
+                cards[i].classList.remove("left");
+                cards[i].style.opacity = "0";
+            }
+            buttons[n].style.backgroundColor = "grey";
+            cards[n].classList.remove("right");
+            cards[n].classList.remove("left");
+            cards[n].style.opacity = "1";
+            cards[(n+1>3? 0 : n+1)].classList.add("right");
+            cards[(n-1<0? 3 : n-1)].classList.add("left");
+        }
+    </script>
+</body>
+</html>
