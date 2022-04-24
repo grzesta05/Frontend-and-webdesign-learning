@@ -41,6 +41,7 @@ body{
 }
 .stackslider--element--caption{
     position: absolute;
+    font-size: 2rem;
 }
 
 .stackslider--arrow>img{
